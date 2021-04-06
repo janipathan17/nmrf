@@ -1,0 +1,55 @@
+uuid: 1d71006c-7509-471c-bafc-e3135dc8d819
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slider.field_button
+    - field.field.paragraph.slider.field_headline
+    - field.field.paragraph.slider.field_image
+    - field.field.paragraph.slider.field_subheadline
+    - paragraphs.paragraphs_type.slider
+  module:
+    - image
+    - link
+id: paragraph.slider.default
+targetEntityType: paragraph
+bundle: slider
+mode: default
+content:
+  field_button:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_headline:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_subheadline:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

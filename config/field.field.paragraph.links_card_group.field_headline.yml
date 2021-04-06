@@ -1,0 +1,19 @@
+uuid: c6a40aa2-f974-448d-b606-cbbde3c90cfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline
+    - paragraphs.paragraphs_type.links_card_group
+id: paragraph.links_card_group.field_headline
+field_name: field_headline
+entity_type: paragraph
+bundle: links_card_group
+label: Headline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 2d058507-5303-42bd-aa30-23d56d496cec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subheadline
+    - node.type.publication
+id: node.publication.field_subheadline
+field_name: field_subheadline
+entity_type: node
+bundle: publication
+label: Subheadline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,25 @@
+uuid: 44f00862-2823-48aa-862d-a38dbb015d9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: title_as_path
+label: 'Title as path'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  b7f48978-2a12-4e14-8c65-72e0b25e2a42:
+    id: node_type
+    bundles:
+      accordion_page: accordion_page
+      event: event
+      landing_page: landing_page
+      webform: webform
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b7f48978-2a12-4e14-8c65-72e0b25e2a42
+selection_logic: and
+weight: -5
+relationships: {  }

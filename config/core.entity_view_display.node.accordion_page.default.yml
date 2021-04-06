@@ -1,0 +1,52 @@
+uuid: f10fdf92-d89e-4042-a921-bd101c194a3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.accordion_page.body
+    - field.field.node.accordion_page.field_accordion_group
+    - field.field.node.accordion_page.field_body
+    - field.field.node.accordion_page.field_sub_title
+    - node.type.accordion_page
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.accordion_page.default
+targetEntityType: node
+bundle: accordion_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_accordion_group:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_sub_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  links: true

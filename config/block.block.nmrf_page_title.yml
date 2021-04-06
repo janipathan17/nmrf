@@ -1,0 +1,20 @@
+uuid: 1f844a58-e8b4-4c59-b24a-4758cdb4d308
+langcode: en
+status: false
+dependencies:
+  theme:
+    - nmrf
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: nmrf_page_title
+theme: nmrf
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

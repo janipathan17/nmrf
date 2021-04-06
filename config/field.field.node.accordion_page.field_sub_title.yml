@@ -1,0 +1,19 @@
+uuid: 0bdccc57-fdbe-4c85-856c-deca5c764ebe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sub_title
+    - node.type.accordion_page
+id: node.accordion_page.field_sub_title
+field_name: field_sub_title
+entity_type: node
+bundle: accordion_page
+label: 'Sub Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

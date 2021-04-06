@@ -1,0 +1,34 @@
+uuid: 52ddec00-7bd5-4ea6-abbf-cd29ceb86a0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_slider
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.slider
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_hero_slider
+field_name: field_hero_slider
+entity_type: node
+bundle: landing_page
+label: 'Hero slider'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slider: slider
+    target_bundles_drag_drop:
+      slider:
+        enabled: true
+        weight: 3
+      upcoming_events:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

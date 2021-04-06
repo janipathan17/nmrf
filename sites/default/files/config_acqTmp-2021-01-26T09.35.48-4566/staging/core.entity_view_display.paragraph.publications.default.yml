@@ -1,0 +1,41 @@
+uuid: cbd07529-a175-4584-a490-368413620c91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.publications.field_headline
+    - field.field.paragraph.publications.field_publication
+    - field.field.paragraph.publications.field_subheadline
+    - paragraphs.paragraphs_type.publications
+  module:
+    - viewsreference
+id: paragraph.publications.default
+targetEntityType: paragraph
+bundle: publications
+mode: default
+content:
+  field_headline:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_publication:
+    weight: 2
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_subheadline:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

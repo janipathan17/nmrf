@@ -1,0 +1,22 @@
+uuid: 82b5e1dc-1c9a-47db-b03b-3e1af59a3e3f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nmrf
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: nmrf_local_tasks
+theme: nmrf
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

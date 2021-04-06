@@ -1,0 +1,424 @@
+services:
+
+  # Plugin Managers: Abstract Parent.
+  plugin.manager.crocheteer.hook:
+    abstract: true
+    arguments:
+      - '@container.namespaces'
+      - '@cache.discovery'
+      - '@module_handler'
+      - '@logger.factory'
+
+  # Plugin Managers: Block.
+  plugin.manager.crocheteer.block_build_alter:
+    class: Drupal\crocheteer\Hook\Block\BuildAlter\HookBlockBuildAlterPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Cron.
+  plugin.manager.crocheteer.cron:
+    class: Drupal\crocheteer\Hook\Cron\HookCronPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Entity.
+  plugin.manager.crocheteer.entity_access:
+    class: Drupal\crocheteer\Hook\Entity\Access\HookEntityAccessPluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.entity_create:
+    class: Drupal\crocheteer\Hook\Entity\Create\HookEntityCreatePluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.entity_delete:
+    class: Drupal\crocheteer\Hook\Entity\Delete\HookEntityDeletePluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.entity_insert:
+    class: Drupal\crocheteer\Hook\Entity\Insert\HookEntityInsertPluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.entity_load:
+    class: Drupal\crocheteer\Hook\Entity\Load\HookEntityLoadPluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.entity_pre_delete:
+    class: Drupal\crocheteer\Hook\Entity\PreDelete\HookEntityPreDeletePluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.entity_pre_save:
+    class: Drupal\crocheteer\Hook\Entity\PreSave\HookEntityPreSavePluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.entity_update:
+    class: Drupal\crocheteer\Hook\Entity\Update\HookEntityUpdatePluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.entity_view:
+    class: Drupal\crocheteer\Hook\Entity\View\HookEntityViewPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Entity Extra.
+  plugin.manager.crocheteer.entity_extra_field_info_alter:
+    class: Drupal\crocheteer\Hook\EntityExtra\FieldInfoAlter\HookEntityExtraFieldInfoAlterPluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.entity_extra_field_info:
+    class: Drupal\crocheteer\Hook\EntityExtra\FieldInfo\HookEntityExtraFieldInfoPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Entity Field.
+  plugin.manager.crocheteer.entity_field_access:
+    class: Drupal\crocheteer\Hook\EntityField\Access\HookEntityFieldAccessPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Entity Type.
+  plugin.manager.crocheteer.entity_base_field_info:
+    class: Drupal\crocheteer\Hook\EntityType\BaseFieldInfo\HookEntityBaseFieldInfoPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Form.
+  plugin.manager.crocheteer.form_alter:
+    class: Drupal\crocheteer\Hook\Form\Alter\HookFormAlterPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Js.
+  plugin.manager.crocheteer.js_alter:
+    class: Drupal\crocheteer\Hook\Js\Alter\HookJsAlterPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Page.
+  plugin.manager.crocheteer.page_bottom:
+    class: Drupal\crocheteer\Hook\Page\Bottom\HookPageBottomPluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.page_top:
+    class: Drupal\crocheteer\Hook\Page\Top\HookPageTopPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Path.
+  plugin.manager.crocheteer.path_delete:
+    class: Drupal\crocheteer\Hook\Path\Delete\HookPathDeletePluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.path_insert:
+    class: Drupal\crocheteer\Hook\Path\Insert\HookPathInsertPluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.path_update:
+    class: Drupal\crocheteer\Hook\Path\Update\HookPathUpdatePluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Template Pre-Process.
+  plugin.manager.crocheteer.template_pre_process_default_variables_alter:
+    class: Drupal\crocheteer\Hook\TemplatePreProcess\DefaultVariablesAlter\HookTemplatePreProcessDefaultVariablesAlterPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Theme.
+  plugin.manager.crocheteer.theme:
+    class: Drupal\crocheteer\Hook\Theme\HookThemePluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Theme Suggestions.
+  plugin.manager.crocheteer.theme_suggestions_alter:
+    class: Drupal\crocheteer\Hook\ThemeSuggestions\Alter\HookThemeSuggestionsAlterPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Token.
+  plugin.manager.crocheteer.token_info:
+    class: Drupal\crocheteer\Hook\Token\Info\HookTokenInfoPluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.token_replacement:
+    class: Drupal\crocheteer\Hook\Token\Replacement\HookTokenReplacementPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Toolbar.
+  plugin.manager.crocheteer.toolbar_alter:
+    class: Drupal\crocheteer\Hook\Toolbar\Alter\HookToolbarAlterPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: User.
+  plugin.manager.crocheteer.user_login:
+    class: Drupal\crocheteer\Hook\User\Login\HookUserLoginPluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.user_logout:
+    class: Drupal\crocheteer\Hook\User\Logout\HookUserLogoutPluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.user_format_name_alter:
+    class: Drupal\crocheteer\Hook\User\FormatNameAlter\HookUserFormatNameAlterPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Views.
+  plugin.manager.crocheteer.views_data:
+    class: Drupal\crocheteer\Hook\Views\Data\HookViewsDataPluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.views_data_alter:
+    class: Drupal\crocheteer\Hook\Views\DataAlter\HookViewsDataAlterPluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.views_pre_build:
+    class: Drupal\crocheteer\Hook\Views\PreBuild\HookViewsPreBuildPluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.views_pre_execute:
+    class: Drupal\crocheteer\Hook\Views\PreExecute\HookViewsPreExecutePluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.views_post_build:
+    class: Drupal\crocheteer\Hook\Views\PostBuild\HookViewsPostBuildPluginManager
+    parent: plugin.manager.crocheteer.hook
+  plugin.manager.crocheteer.views_post_execute:
+    class: Drupal\crocheteer\Hook\Views\PostExecute\HookViewsPostExecutePluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Plugin Managers: Widget Form.
+  plugin.manager.crocheteer.widget_form_alter:
+    class: Drupal\crocheteer\Hook\WidgetForm\Alter\HookWidgetFormAlterPluginManager
+    parent: plugin.manager.crocheteer.hook
+
+  # Event Subscribers: Block.
+  event.subscriber.crocheteer.block_build_alter:
+    class: Drupal\crocheteer\EventSubscriber\HookBlockBuildAlterEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.block_build_alter'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Cron.
+  event.subscriber.crocheteer.cron:
+    class: Drupal\crocheteer\EventSubscriber\HookCronEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.cron'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Entity.
+  event.subscriber.crocheteer.entity_access:
+    class: Drupal\crocheteer\EventSubscriber\HookEntityAccessEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.entity_access'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.entity_create:
+    class: Drupal\crocheteer\EventSubscriber\HookEntityCreateEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.entity_create'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.entity_delete:
+    class: Drupal\crocheteer\EventSubscriber\HookEntityDeleteEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.entity_delete'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.entity_insert:
+    class: Drupal\crocheteer\EventSubscriber\HookEntityInsertEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.entity_insert'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.entity_load:
+    class: Drupal\crocheteer\EventSubscriber\HookEntityLoadEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.entity_load'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.entity_pre_delete:
+    class: Drupal\crocheteer\EventSubscriber\HookEntityPreDeleteEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.entity_pre_delete'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.entity_pre_save:
+    class: Drupal\crocheteer\EventSubscriber\HookEntityPreSaveEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.entity_pre_save'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.entity_update:
+    class: Drupal\crocheteer\EventSubscriber\HookEntityUpdateEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.entity_update'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.entity_view:
+    class: Drupal\crocheteer\EventSubscriber\HookEntityViewEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.entity_view'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Entity Extra.
+  event.subscriber.crocheteer.entity_extra_field_info_alter:
+    class: Drupal\crocheteer\EventSubscriber\HookEntityExtraFieldInfoAlterEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.entity_extra_field_info_alter'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.entity_extra_field_info:
+    class: Drupal\crocheteer\EventSubscriber\HookEntityExtraFieldInfoEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.entity_extra_field_info'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Entity Field.
+  event.subscriber.crocheteer.entity_field_access:
+    class: Drupal\crocheteer\EventSubscriber\HookEntityFieldAccessEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.entity_field_access'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Entity Type.
+  event.subscriber.crocheteer.entity_base_field_info:
+    class: Drupal\crocheteer\EventSubscriber\HookEntityBaseFieldInfoEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.entity_base_field_info'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Form.
+  event.subscriber.crocheteer.form_alter:
+    class: Drupal\crocheteer\EventSubscriber\HookFormAlterEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.form_alter'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Js.
+  event.subscriber.crocheteer.js_alter:
+    class: Drupal\crocheteer\EventSubscriber\HookJsAlterEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.js_alter'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Page.
+  event.subscriber.crocheteer.page_bottom:
+    class: Drupal\crocheteer\EventSubscriber\HookPageBottomEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.page_bottom'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.page_top:
+    class: Drupal\crocheteer\EventSubscriber\HookPageTopEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.page_top'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Path.
+  event.subscriber.crocheteer.path_delete:
+    class: Drupal\crocheteer\EventSubscriber\HookPathDeleteEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.path_delete'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.path_insert:
+    class: Drupal\crocheteer\EventSubscriber\HookPathInsertEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.path_insert'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.path_update:
+    class: Drupal\crocheteer\EventSubscriber\HookPathUpdateEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.path_update'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Template Pre-Process.
+  event.subscriber.crocheteer.template_pre_process_default_variables_alter:
+    class: Drupal\crocheteer\EventSubscriber\HookTemplatePreProcessDefaultVariablesAlterEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.template_pre_process_default_variables_alter'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Theme Suggestions.
+  event.subscriber.crocheteer.theme_suggestions_alter:
+    class: Drupal\crocheteer\EventSubscriber\HookThemeSuggestionsAlterEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.theme_suggestions_alter'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Token.
+  event.subscriber.crocheteer.toolbar_alter:
+    class: Drupal\crocheteer\EventSubscriber\HookToolbarAlterEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.toolbar_alter'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Theme.
+  event.subscriber.crocheteer.theme:
+    class: Drupal\crocheteer\EventSubscriber\HookThemeEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.theme'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Token.
+  event.subscriber.crocheteer.token_info:
+    class: Drupal\crocheteer\EventSubscriber\HookTokenInfoEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.token_info'
+    tags:
+      - { name: event_subscriber }
+  evplugin.manager.crocheteer.token_replacement:
+    class: Drupal\crocheteer\EventSubscriber\HookTokenReplacementEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.token_replacement'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: User.
+  event.subscriber.crocheteer.user_login:
+    class: Drupal\crocheteer\EventSubscriber\HookUserLoginEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.user_login'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.user_logout:
+    class: Drupal\crocheteer\EventSubscriber\HookUserLogoutEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.user_logout'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.user_format_name_alter:
+    class: Drupal\crocheteer\EventSubscriber\HookUserFormatNameAlterEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.user_format_name_alter'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Views.
+  event.subscriber.crocheteer.views_data:
+    class: Drupal\crocheteer\EventSubscriber\HookViewsDataEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.views_data'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.views_data_alter:
+    class: Drupal\crocheteer\EventSubscriber\HookViewsDataAlterEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.views_data_alter'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.views_pre_build:
+    class: Drupal\crocheteer\EventSubscriber\HookViewsPreBuildEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.views_pre_build'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.views_pre_execute:
+    class: Drupal\crocheteer\EventSubscriber\HookViewsPreExecuteEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.views_pre_execute'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.views_post_build:
+    class: Drupal\crocheteer\EventSubscriber\HookViewsPostBuildEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.views_post_build'
+    tags:
+      - { name: event_subscriber }
+  event.subscriber.crocheteer.views_post_execute:
+    class: Drupal\crocheteer\EventSubscriber\HookViewsPostExecuteEventSubscriber
+    arguments:
+      - '@plugin.manager.crocheteer.views_post_execute'
+    tags:
+      - { name: event_subscriber }
+
+  # Event Subscribers: Widget Form.
+  event.subscriber.crocheteer.widget_form_alter:
+    class: Drupal\crocheteer\EventSubscriber\HookWidgetFormAlterEventSubscriber
+    arguments:
+    - '@plugin.manager.crocheteer.widget_form_alter'
+    tags:
+    - { name: event_subscriber }

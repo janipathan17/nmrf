@@ -1,0 +1,46 @@
+uuid: 2592fda2-d6cc-46b4-b349-24e850dd0dd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accordion_group
+    - node.type.accordion_page
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - entity_reference_revisions
+id: node.accordion_page.field_accordion_group
+field_name: field_accordion_group
+entity_type: node
+bundle: accordion_page
+label: 'Accordion Group'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      accordion: accordion
+    target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: 7
+      links_card:
+        weight: 8
+        enabled: false
+      links_card_group:
+        weight: 9
+        enabled: false
+      publications:
+        weight: 10
+        enabled: false
+      slider:
+        weight: 11
+        enabled: false
+      upcoming_events:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

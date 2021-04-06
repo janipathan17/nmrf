@@ -1,0 +1,52 @@
+uuid: 3b59eae7-5ba8-4254-a5e3-dd8959427ab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.publication.field_link
+    - field.field.node.publication.field_publication_image
+    - field.field.node.publication.field_subheadline
+    - node.type.publication
+  module:
+    - image
+    - link
+    - user
+id: node.publication.default
+targetEntityType: node
+bundle: publication
+mode: default
+content:
+  field_link:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_publication_image:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_subheadline:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

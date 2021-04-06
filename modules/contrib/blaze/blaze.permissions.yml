@@ -1,0 +1,4 @@
+administer blaze:
+  title: "Administer the Blaze module's main settings"
+administer blaze lighters:
+  title: 'Administer Blaze Lighter plugins & configurations'

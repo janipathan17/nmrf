@@ -1,0 +1,25 @@
+uuid: 8c227fc7-8a1c-41b0-b17c-24dace0948a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - search
+  theme:
+    - nmrf
+third_party_settings:
+  block_class:
+    classes: top-search
+id: searchform
+theme: nmrf
+region: top_header
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

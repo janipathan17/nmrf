@@ -1,0 +1,13 @@
+# Module Information
+name: Blaze
+type: module
+description: 'A module that facilitates cache warming practices on Drupal websites.'
+core: 8.x
+php: 7.2
+dependencies:
+  - crocheteer
+
+# Information added by Drupal.org packaging script on 2020-03-10
+version: '8.x-1.0-alpha1'
+project: 'blaze'
+datestamp: 1583849423

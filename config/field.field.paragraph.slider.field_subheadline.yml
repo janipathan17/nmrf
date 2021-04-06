@@ -1,0 +1,19 @@
+uuid: 7b51c417-cfc8-449e-b164-5b68e9a87887
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subheadline
+    - paragraphs.paragraphs_type.slider
+id: paragraph.slider.field_subheadline
+field_name: field_subheadline
+entity_type: paragraph
+bundle: slider
+label: Subheadline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

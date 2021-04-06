@@ -1,0 +1,14 @@
+name: Crocheteer
+type: module
+description: Plugin-based approach to Drupal Hooks
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Development
+php: 7.2
+dependencies:
+  - hook_event_dispatcher:hook_event_dispatcher
+
+# Information added by Drupal.org packaging script on 2019-11-27
+version: '8.x-1.0-beta5'
+project: 'crocheteer'
+datestamp: 1574887689

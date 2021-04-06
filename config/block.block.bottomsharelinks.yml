@@ -1,0 +1,29 @@
+uuid: c85ffca8-29c8-44e2-9025-d80e653f57ac
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3364dbea-03e6-4be7-95b3-ae4f887d68eb'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - nmrf
+third_party_settings:
+  block_class:
+    classes: bottom-share-links
+id: bottomsharelinks
+theme: nmrf
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:3364dbea-03e6-4be7-95b3-ae4f887d68eb'
+settings:
+  id: 'block_content:3364dbea-03e6-4be7-95b3-ae4f887d68eb'
+  label: 'Bottom Share Links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

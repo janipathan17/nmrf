@@ -1,0 +1,14 @@
+name: Crocheteer - Example
+type: module
+description: Provides example Hook Plugin implementations for different types of Hooks.
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Examples
+php: 7.2
+dependencies:
+- crocheteer:crocheteer
+
+# Information added by Drupal.org packaging script on 2019-11-27
+version: '8.x-1.0-beta5'
+project: 'crocheteer'
+datestamp: 1574887689

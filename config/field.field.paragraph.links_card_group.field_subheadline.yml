@@ -1,0 +1,19 @@
+uuid: f7de90cf-8b8e-4a98-bbdc-14b22e357197
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subheadline
+    - paragraphs.paragraphs_type.links_card_group
+id: paragraph.links_card_group.field_subheadline
+field_name: field_subheadline
+entity_type: paragraph
+bundle: links_card_group
+label: Subheadline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,29 @@
+uuid: 74ab128a-c3bf-4522-a709-d0ddc581f95c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:50903194-9023-4a8e-a01d-b5658b09a66e'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - nmrf
+third_party_settings:
+  block_class:
+    classes: navigation-trigger
+id: navigationtrigger
+theme: nmrf
+region: top_header
+weight: 0
+provider: null
+plugin: 'block_content:50903194-9023-4a8e-a01d-b5658b09a66e'
+settings:
+  id: 'block_content:50903194-9023-4a8e-a01d-b5658b09a66e'
+  label: 'Navigation trigger'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

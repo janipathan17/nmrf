@@ -1,0 +1,20 @@
+uuid: 70b48e1f-9bdd-4fb7-a6fc-3b0196eba063
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nmrf
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: nmrf_local_actions
+theme: nmrf
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,32 @@
+uuid: 74e1d7e9-655d-49d1-a3ca-04fb63dd65c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.event_type.field_icon
+    - taxonomy.vocabulary.event_type
+  module:
+    - image
+    - text
+id: taxonomy_term.event_type.default
+targetEntityType: taxonomy_term
+bundle: event_type
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_icon:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

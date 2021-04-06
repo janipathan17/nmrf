@@ -1,0 +1,10 @@
+uuid: 474d3556-22f4-4b0e-b77e-7be1ea661083
+langcode: en
+status: true
+dependencies: {  }
+id: links_card
+label: 'Links Card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

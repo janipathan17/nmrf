@@ -1,0 +1,29 @@
+uuid: a9c43cb3-9a4f-403c-bd7a-7ad248c97903
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_safety_training_type
+    - node.type.event
+    - taxonomy.vocabulary.safety_training_type
+id: node.event.field_safety_training_type
+field_name: field_safety_training_type
+entity_type: node
+bundle: event
+label: 'Safety training type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      safety_training_type: safety_training_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

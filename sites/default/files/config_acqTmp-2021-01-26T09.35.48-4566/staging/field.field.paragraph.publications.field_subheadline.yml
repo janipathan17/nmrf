@@ -1,0 +1,19 @@
+uuid: 926cfdfb-4ee0-4861-a01c-5a60138bc390
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subheadline
+    - paragraphs.paragraphs_type.publications
+id: paragraph.publications.field_subheadline
+field_name: field_subheadline
+entity_type: paragraph
+bundle: publications
+label: Subheadline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

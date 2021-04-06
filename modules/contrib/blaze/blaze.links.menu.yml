@@ -1,0 +1,10 @@
+system.admin_config.blaze:
+  title: 'Blaze'
+  description: 'Configure Blaze settings to improve application performance by setting cache warming properties.'
+  route_name: blaze
+  parent: system.admin_config
+system.admin_config.blaze.lighters:
+  title: 'Lighters'
+  description: 'Configure Blaze settings to improve application performance by setting cache warming properties.'
+  route_name: blaze.lighters.list
+  parent: system.admin_config.blaze

@@ -1,0 +1,77 @@
+bootstrap_barrio_library: production
+bootstrap_barrio_sidebar_position: both
+bootstrap_barrio_content_offset: 0
+bootstrap_barrio_sidebar_first_width: 4
+bootstrap_barrio_sidebar_first_offset: 0
+bootstrap_barrio_sidebar_second_width: 3
+bootstrap_barrio_sidebar_second_offset: 0
+bootstrap_barrio_fluid_container: 0
+bootstrap_barrio_button: 1
+bootstrap_barrio_button_size: ''
+bootstrap_barrio_button_outline: 0
+bootstrap_barrio_navbar_toggle: navbar-toggleable-lg
+bootstrap_barrio_navbar_container: navbar-toggleable-md
+bootstrap_barrio_navbar_top_position: ''
+bootstrap_barrio_navbar_top_color: navbar-dark
+bootstrap_barrio_navbar_top_background: bg-secondary
+bootstrap_barrio_navbar_position: ''
+bootstrap_barrio_navbar_color: navbar-dark
+bootstrap_barrio_navbar_background: bg-primary
+bootstrap_barrio_messages_widget: toasts
+bootstrap_barrio_radio: custom
+bootstrap_barrio_checkbox: switch
+bootstrap_barrio_select: custom
+bootstrap_barrio_file: custom
+bootstrap_barrio_system_messages: messages_light
+bootstrap_barrio_table_hover: 1
+bootstrap_barrio_table_style: table-striped
+_core:
+  default_config_hash: ahxFa6bznpmozceV98auEO5JZSz4Rmii3jY85jjProI
+schemas:
+  bootstrap: 8000
+  nmrf: 8000
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://nmrf.dd:8083/themes/contrib/bootstrap/favicon.ico'
+  use_default: 1
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: 'public://Screen Shot 2021-01-28 at 9.49.53 AM_0.png'
+  url: ''
+  use_default: 0
+table_responsive: '-1'
+region_wells:
+  top_header: ''
+  top_navigation: ''
+  top_header_form: ''
+  header: ''
+  header_form: ''
+  primary_menu: ''
+  secondary_menu: ''
+  highlighted: ''
+  featured_top: ''
+  breadcrumb: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  featured_bottom_first: ''
+  featured_bottom_second: ''
+  featured_bottom_third: ''
+  footer_first: ''
+  footer_second: ''
+  footer_third: ''
+  footer_fourth: ''
+  footer_fifth: ''
+cdn_provider: ''
+cdn_theme: bootstrap
+cdn_cache_ttl_versions: 0
+cdn_cache_ttl_themes: 0
+reset_http_request_cache: ''
+table: ''
+cdn_cache_ttl_assets: 0
+cdn_cache_ttl_library: 0

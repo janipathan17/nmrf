@@ -1,0 +1,13 @@
+# Module Information
+name: 'Blaze: URLs'
+type: module
+description: 'Sub-module of the Blaze module that allows for easy cache warming of site URLs.'
+core: 8.x
+php: 7.2
+dependencies:
+- blaze
+
+# Information added by Drupal.org packaging script on 2020-03-10
+version: '8.x-1.0-alpha1'
+project: 'blaze'
+datestamp: 1583849423

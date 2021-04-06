@@ -1,0 +1,21 @@
+uuid: 90e795f3-d63a-4d87-a03c-4d1ccc9d6441
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.accordion_page
+  module:
+    - text
+id: node.accordion_page.field_body
+field_name: field_body
+entity_type: node
+bundle: accordion_page
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

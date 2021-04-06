@@ -1,0 +1,8 @@
+uuid: 628de981-2263-4696-936f-02c5efa28c3a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Safety training type'
+vid: safety_training_type
+description: ''
+weight: 0

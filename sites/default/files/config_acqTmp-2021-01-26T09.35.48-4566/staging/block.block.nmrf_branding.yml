@@ -1,0 +1,25 @@
+uuid: 2f557529-7b8c-4506-98b1-d81382a97597
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nmrf
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: nmrf_branding
+theme: nmrf
+region: top_header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

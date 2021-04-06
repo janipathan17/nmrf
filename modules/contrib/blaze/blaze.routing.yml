@@ -1,0 +1,25 @@
+# Parent menu item.
+blaze:
+  path: '/admin/config/blaze'
+  defaults:
+    _form: '\Drupal\blaze\Form\BlazeSettingsForm'
+    _title: 'Blaze'
+  requirements:
+    _permission: 'administer blaze'
+
+# Lighters Listing Page.
+blaze.lighters.list:
+  path: '/admin/config/blaze/lighters'
+  defaults:
+    _controller: '\Drupal\blaze\Controller\BlazeLighterListController::list'
+  requirements:
+    _permission: 'administer blaze lighters'
+
+# Lighters edit page.
+blaze.lighters.edit:
+  path: '/admin/config/blaze/lighters/{lighter_id}/edit'
+  defaults:
+    _form: '\Drupal\blaze\Form\BlazeLighterEditForm'
+    _title: 'Edit Lighter'
+  requirements:
+    _permission: 'administer blaze lighters'

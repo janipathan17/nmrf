@@ -1,0 +1,8 @@
+uuid: fd9e9bb9-4dbe-45b2-821e-691772defc24
+langcode: en
+status: true
+dependencies: {  }
+name: Instructor
+vid: instructor
+description: ''
+weight: 0

@@ -1,0 +1,6 @@
+services:
+  blaze.commands:
+    class: \Drupal\blaze\Commands\BlazeCommands
+    arguments: ['@plugin.manager.blaze.lighters']
+    tags:
+      - { name: drush.command }

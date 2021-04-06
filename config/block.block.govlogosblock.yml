@@ -1,0 +1,29 @@
+uuid: d55da905-99a2-4a2c-bfa4-aba56547e8ff
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f369c622-cba4-47ee-aa8c-abf51e954ec6'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - nmrf
+third_party_settings:
+  block_class:
+    classes: gov-logos-block
+id: govlogosblock
+theme: nmrf
+region: footer_fourth
+weight: -9
+provider: null
+plugin: 'block_content:f369c622-cba4-47ee-aa8c-abf51e954ec6'
+settings:
+  id: 'block_content:f369c622-cba4-47ee-aa8c-abf51e954ec6'
+  label: 'Gov Logos Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

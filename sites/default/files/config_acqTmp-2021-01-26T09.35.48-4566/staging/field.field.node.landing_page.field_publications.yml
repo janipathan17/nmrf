@@ -1,0 +1,37 @@
+uuid: ea398b58-c7e0-4ac3-9e8d-57111f4d58fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publications
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.publications
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_publications
+field_name: field_publications
+entity_type: node
+bundle: landing_page
+label: Publications
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      publications: publications
+    target_bundles_drag_drop:
+      publications:
+        enabled: true
+        weight: 4
+      slider:
+        weight: 5
+        enabled: false
+      upcoming_events:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

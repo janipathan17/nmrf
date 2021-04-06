@@ -1,0 +1,12 @@
+# Composer
+/vendor/
+composer.lock
+
+# PHP Unit
+.phpunit.result.cache
+
+# IDE
+.idea/
+
+# OS
+.DS_Store

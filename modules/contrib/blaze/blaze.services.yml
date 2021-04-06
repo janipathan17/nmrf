@@ -1,0 +1,10 @@
+# Service declaration file.
+services:
+  # Logger Channel.
+  logger.channel.blaze:
+    parent: logger.channel_base
+    arguments: ['blaze']
+  # Lighters Management.
+  plugin.manager.blaze.lighters:
+    class: Drupal\blaze\PluginManager\Lighters\LighterPluginManager
+    parent: default_plugin_manager

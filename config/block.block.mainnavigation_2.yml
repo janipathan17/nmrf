@@ -1,0 +1,29 @@
+uuid: 2d1958e2-105a-4c92-a3cd-42f726482be4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_class
+    - system
+  theme:
+    - nmrf
+third_party_settings:
+  block_class:
+    classes: footer-navigation
+id: mainnavigation_2
+theme: nmrf
+region: footer_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

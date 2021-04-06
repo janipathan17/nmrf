@@ -1,0 +1,41 @@
+uuid: f70ed905-abd6-43d1-bdad-f94a9d9c16ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.upcoming_events.field_event_dis
+    - field.field.paragraph.upcoming_events.field_headline
+    - field.field.paragraph.upcoming_events.field_subheadline
+    - paragraphs.paragraphs_type.upcoming_events
+  module:
+    - viewsreference
+id: paragraph.upcoming_events.default
+targetEntityType: paragraph
+bundle: upcoming_events
+mode: default
+content:
+  field_event_dis:
+    weight: 2
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_headline:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_subheadline:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

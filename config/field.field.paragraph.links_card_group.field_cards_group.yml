@@ -1,0 +1,43 @@
+uuid: cb3ba135-e196-4f85-8bfe-15f0480e9a2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cards_group
+    - paragraphs.paragraphs_type.links_card
+    - paragraphs.paragraphs_type.links_card_group
+  module:
+    - entity_reference_revisions
+id: paragraph.links_card_group.field_cards_group
+field_name: field_cards_group
+entity_type: paragraph
+bundle: links_card_group
+label: 'Cards Group'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      links_card: links_card
+    target_bundles_drag_drop:
+      links_card:
+        enabled: true
+        weight: 6
+      links_card_group:
+        weight: 7
+        enabled: false
+      publications:
+        weight: 8
+        enabled: false
+      slider:
+        weight: 9
+        enabled: false
+      upcoming_events:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,75 @@
+<?php
+
+/**
+ * @file
+ * Module implementation file.
+ */
+
+use Drupal\blaze\Form\BlazeLighterEditForm;
+use Drupal\blaze\PluginManager\Lighters\ConfigurableLighterPluginBase;
+
+/**
+ * Implements hook_help().
+ *
+ * {@inheritdoc}
+ */
+function blaze_help($route_name) {
+  switch ($route_name) {
+    case 'help.page.blaze':
+      $text = file_get_contents(__DIR__ . '/README.md');
+      if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
+        return '<pre>' . $text . '</pre>';
+      }
+
+      // Use the Markdown filter to render the README.
+      $filterManager = \Drupal::service('plugin.manager.filter');
+      $settings = \Drupal::configFactory()->get('markdown.settings')->getRawData();
+      $config = ['settings' => $settings];
+      /* @var \Drupal\filter\Plugin\FilterInterface $filter */
+      $filter = $filterManager->createInstance('markdown', $config);
+      return $filter->process($text, 'en');
+  }
+  return NULL;
+}
+
+/**
+ * Implements hook_rebuild().
+ *
+ * @todo - Use events instead of a hook when events are core.
+ */
+function blaze_rebuild() {
+  // Activate all lighters that are configured to run on cache clear.
+  $lighters = Drupal::service('plugin.manager.blaze.lighters')->getLighters();
+  /* @var \Drupal\blaze\PluginManager\Lighters\LighterPluginBase */
+  array_map(function($lighter) {
+    if (!($lighter instanceof ConfigurableLighterPluginBase)) {
+      return;
+    }
+
+    $configuration = $lighter->getConfiguration();
+    if ($configuration[BlazeLighterEditForm::CONFIG_LIGHT_ON_CACHE_CLEAR]) {
+      $lighter->light();
+    }
+  }, $lighters);
+}
+
+/**
+ * Implements hook_cron().
+ *
+ * @todo - Use events instead of a hook when events are core.
+ */
+function blaze_cron() {
+  // Activate all lighters that are configured to run on cache clear.
+  $lighters = Drupal::service('plugin.manager.blaze.lighters')->getLighters();
+  /* @var \Drupal\blaze\PluginManager\Lighters\LighterPluginBase */
+  array_map(function($lighter) {
+    if (!($lighter instanceof ConfigurableLighterPluginBase)) {
+      return;
+    }
+
+    $configuration = $lighter->getConfiguration();
+    if ($configuration[BlazeLighterEditForm::CONFIG_LIGHT_ON_CRON]) {
+      $lighter->light();
+    }
+  }, $lighters);
+}

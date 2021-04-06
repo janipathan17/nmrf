@@ -1,0 +1,59 @@
+uuid: 16a958da-1d02-48a3-8748-6b93850c98df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_publication
+    - paragraphs.paragraphs_type.publications
+    - views.view.publications
+  module:
+    - viewsreference
+id: paragraph.publications.field_publication
+field_name: field_publication
+entity_type: paragraph
+bundle: publications
+label: Publication
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    display_id: block_1
+    data: 'a:5:{s:8:"argument";N;s:5:"limit";N;s:6:"offset";N;s:5:"pager";N;s:5:"title";N;}'
+    target_uuid: 959cb5cc-760b-4898-b726-cfd4c0bb7dc5
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+    embed: 0
+  preselect_views:
+    publications: publications
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    event: 0
+    files: 0
+    frontpage: 0
+    media: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    watchdog: 0
+    webform_submissions: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    argument: 0
+    limit: 0
+    offset: 0
+    pager: 0
+    title: 0
+field_type: viewsreference

@@ -1,0 +1,6 @@
+show_on_admin: 0
+alert_styles: "primary|Default\r\nwarning|Warning\r\nnotice|Notice"
+refresh_interval: '15'
+automatic_refresh: 1
+_core:
+  default_config_hash: GnciVSpJGwXtuBeAb60PIb2f1e3gGcwKpoyRpxgQ3gM

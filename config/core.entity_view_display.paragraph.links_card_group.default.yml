@@ -1,0 +1,41 @@
+uuid: 16b80b0c-d4c9-41a8-bfdf-0b84913ee113
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.links_card_group.field_cards_group
+    - field.field.paragraph.links_card_group.field_headline
+    - field.field.paragraph.links_card_group.field_subheadline
+    - paragraphs.paragraphs_type.links_card_group
+  module:
+    - entity_reference_revisions
+id: paragraph.links_card_group.default
+targetEntityType: paragraph
+bundle: links_card_group
+mode: default
+content:
+  field_cards_group:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_headline:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_subheadline:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

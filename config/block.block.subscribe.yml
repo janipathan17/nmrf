@@ -1,0 +1,35 @@
+uuid: 44472fd1-3ffc-4454-9def-2a0c5045a440
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4abf8e73-47eb-4ed1-a0bb-7b82c385f1bf'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - nmrf
+third_party_settings:
+  block_class:
+    classes: subscribe
+id: subscribe
+theme: nmrf
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:4abf8e73-47eb-4ed1-a0bb-7b82c385f1bf'
+settings:
+  id: 'block_content:4abf8e73-47eb-4ed1-a0bb-7b82c385f1bf'
+  label: Subscribe
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
